@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="reset">Reset</string>
+    <string name="exit">Exit</string>
+    <string name="todo">TODO</string>
+    <string name="score_x">Score X :</string>
+    <string name="score_x_0">Score X : 0</string>
+    <string name="score_y_0">Score Y : 0</string>
+    <string name="score_o_0">Score O : 0</string>
+</resources>

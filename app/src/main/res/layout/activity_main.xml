@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#29323c">
+
+
+<!--    button 5-->
+  <RelativeLayout
+      android:layout_width="90dp"
+      android:layout_height="90dp"
+      android:layout_centerInParent="true"
+      android:id="@+id/btn5"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp">
+
+<!--      for background-->
+<!--      android:background="#e2ebf0"-->
+      <!--      android:layout_centerInParent="true"     helps to align the screen or grid size according to the screen resolution-->
+
+        <!--      //basic grid layout of the game panel-->
+        <!--      //relative center button around which rest of 8 buttons will be made-->
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/buttonImage5">
+      </ImageView>
+  </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_x_0"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/ScoreX"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_o_0"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/ScoreY"
+            />
+    </LinearLayout>
+
+
+    
+<!--    for the grid outline line simple it will create lines separating blocks from each other where the options will be selected-->
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="8dp"
+        android:background="#fa709a"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn5"
+        android:layout_marginBottom="8dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="8dp"
+        android:background="#fa709a"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn5"
+        android:layout_marginTop="8dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="8dp"
+        android:layout_height="330dp"
+        android:background="#fa709a"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btn5"
+        android:layout_marginEnd="-8dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="8dp"
+        android:layout_height="330dp"
+        android:background="#fa709a"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/btn5"
+        android:layout_marginStart="-8dp">
+    </RelativeLayout>
+
+<!--    button 2-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn2"
+        android:layout_above="@+id/btn5"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage2" />
+    </RelativeLayout>
+
+
+
+
+
+<!--    button 8-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn8"
+        android:layout_below="@+id/btn5"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage8" />
+    </RelativeLayout>
+
+
+
+
+
+<!--    button 4-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn4"
+        android:layout_toStartOf="@+id/btn5"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage4" />
+    </RelativeLayout>
+
+
+
+
+
+<!--    button 6-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn6"
+        android:layout_toEndOf="@+id/btn5"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="20dp" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage6" />
+    </RelativeLayout>
+
+
+
+
+
+<!--    button 1-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn1"
+        android:layout_above="@+id/btn5"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/btn2"
+         >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage1" />
+    </RelativeLayout>
+
+
+
+
+<!--button 3-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn3"
+        android:layout_above="@+id/btn5"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/btn2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage3" />
+    </RelativeLayout>
+
+
+
+
+    <!--    button 7-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn7"
+        android:layout_below="@+id/btn5"
+        android:layout_toStartOf="@id/btn8"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage7" />
+    </RelativeLayout>
+
+
+
+    <!--    button 9-->
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn9"
+        android:layout_below="@+id/btn5"
+        android:layout_toEndOf="@id/btn8"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonImage9" />
+    </RelativeLayout>
+
+
+
+<!--    reset button-->
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/resetbutton"
+        android:layout_below="@+id/btn5"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="135dp"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/resbtn">
+    </Button>
+
+
+
+</RelativeLayout>
